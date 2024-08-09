@@ -4,7 +4,9 @@ import { certificates } from '@/lib/data';
 
 const CertificateContainer = () => {
   return (
-    <div className="mt-56 flex flex-col px-2 md:px-36 gap-10 justify-between bg-neutral-950 w-full">
+    <div
+      id="certificates"
+      className="mt-56 flex flex-col px-2 md:px-36 gap-10 justify-between bg-neutral-950 w-full">
       <div className="text-white w-full p-3 gap-3 flex justify-center items-center flex-col">
         <h2 className="w-24 h-10 rounded-full bg-neutral-800 text-center flex justify-center items-center">
           Certificates

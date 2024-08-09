@@ -17,7 +17,9 @@ const Stack = ({ imageUrl, title }) => {
 };
 const Stacks = () => {
   return (
-    <div className="flex flex-col p-2 md:px-36 gap-10 justify-between bg-neutral-950 w-full">
+    <div
+      id="skills"
+      className="flex flex-col p-2 md:px-36 gap-10 justify-between bg-neutral-950 w-full">
       <div className="text-white w-full p-3 gap-3 flex justify-center items-center flex-col">
         <h2 className="w-24 h-10 rounded-full bg-neutral-800 text-center flex justify-center items-center">
           Skills

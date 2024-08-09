@@ -1,6 +1,7 @@
 'use client';
 import { Bars3Icon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const Navbar = () => {
@@ -33,34 +34,41 @@ const Navbar = () => {
             active ? 'block' : 'hidden'
           }`}
           id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border  rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border  bg-neutral-500/50 md:bg-neutral-500/0  rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md">
             <li>
               <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-300 md:p-0 dark:text-white md:dark:hover:text-yellow-300 dark:hover:bg-gray-900 dark:hover:text-yellow-300 md:dark:hover:bg-transparent">
+                href="#about"
+                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-300 md:p-0 dark:text-white md:dark:hover:text-yellow-300 dark:hover:bg-neutral-900 dark:hover:text-yellow-300 md:dark:hover:bg-transparent">
                 About
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-300 md:p-0 dark:text-white md:dark:hover:text-yellow-300 dark:hover:bg-gray-900 dark:hover:text-yellow-300 md:dark:hover:bg-transparent">
+              <Link
+                href="#skills"
+                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-300 md:p-0 dark:text-white md:dark:hover:text-yellow-300 dark:hover:bg-neutral-900 dark:hover:text-yellow-300 md:dark:hover:bg-transparent">
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-300 md:p-0 dark:text-white md:dark:hover:text-yellow-300 dark:hover:bg-gray-900 dark:hover:text-yellow-300 md:dark:hover:bg-transparent">
+              <Link
+                href="#projects"
+                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-300 md:p-0 dark:text-white md:dark:hover:text-yellow-300 dark:hover:bg-neutral-900 dark:hover:text-yellow-300 md:dark:hover:bg-transparent">
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-300 md:p-0 dark:text-white md:dark:hover:text-yellow-300 dark:hover:bg-gray-900 dark:hover:text-yellow-300 md:dark:hover:bg-transparent">
+              <Link
+                href="#certificates"
+                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-300 md:p-0 dark:text-white md:dark:hover:text-yellow-300 dark:hover:bg-neutral-900 dark:hover:text-yellow-300 md:dark:hover:bg-transparent">
+                Certificates
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="mailto:rioaldierwanto@gmail.com"
+                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-300 md:p-0 dark:text-white md:dark:hover:text-yellow-300 dark:hover:bg-neutral-900 dark:hover:text-yellow-300 md:dark:hover:bg-transparent">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
