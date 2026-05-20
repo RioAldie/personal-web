@@ -62,6 +62,27 @@ const SkillsBar = (props) => {
             urlImage={'icon-nodejs.svg'}
             contentActive={contentActive}
           />
+       <Skill
+            value={'laravel'}
+            title={'Laravel'}
+            setContentActive={setContentActive}
+            urlImage={'laravel-2.svg'}
+            contentActive={contentActive}
+          />
+          <Skill  
+            value={'figma'}
+            title={'Figma'}
+            setContentActive={setContentActive}
+            urlImage={'icon-figma.svg'}
+            contentActive={contentActive}
+          />
+          <Skill
+            value={'postgree'}
+            title={'PostgreeSQL'}
+            setContentActive={setContentActive}
+            urlImage={'icon-postgree.svg'}
+            contentActive={contentActive}
+          />
           <Skill
             value={'mongodb'}
             title={'MongoDB'}
@@ -70,17 +91,31 @@ const SkillsBar = (props) => {
             contentActive={contentActive}
           />
           <Skill
-            value={'figma'}
-            title={'Figma'}
+            value={'adonisjs'}
+            title={'AdonisJS'}
             setContentActive={setContentActive}
-            urlImage={'icon-figma.svg'}
+            urlImage={'icon-adonis.svg'}
             contentActive={contentActive}
           />
           <Skill
-            value={'laravel'}
-            title={'Laravel'}
+            value={'redis'}
+            title={'Redis'}
             setContentActive={setContentActive}
-            urlImage={'laravel-2.svg'}
+            urlImage={'icon-redis.svg'}
+            contentActive={contentActive}
+          />
+          <Skill
+            value={'docker'}
+            title={'Docker'}
+            setContentActive={setContentActive}
+            urlImage={'icon-docker.svg'}
+            contentActive={contentActive}
+          />
+          <Skill
+            value={'golang'}
+            title={'Golang'}
+            setContentActive={setContentActive}
+            urlImage={'icon-golang.svg'}
             contentActive={contentActive}
           />
         </ul>

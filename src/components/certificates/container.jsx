@@ -1,35 +1,54 @@
+'use client';
 import React from 'react';
 import Certificate from './card';
 import { certificates } from '@/lib/data';
+import ScrollReveal from '../animations/scrollReveal';
 
 const CertificateContainer = () => {
   return (
-    <div
-      id="certificates"
-      className="mt-56 flex flex-col px-2 md:px-36 gap-10 justify-between bg-neutral-950 w-full">
-      <div className="text-white w-full p-3 gap-3 flex justify-center items-center flex-col">
-        <h2 className="w-24 h-10 rounded-full bg-neutral-800 text-center flex justify-center items-center">
-          Certificates
-        </h2>
-        <p>Certificates from My Web Development Studies</p>
+    <ScrollReveal animation="fadeUp" duration={600}>
+      <div
+        id="certificates"
+        className="section-certificates gradient-border-top gradient-border-bottom rounded-2xl py-16 px-6 flex flex-col gap-12 justify-between w-full relative overflow-hidden"
+      >
+        {/* Ambient orbs */}
+        <div className="glow-orb glow-orb-blue animate-float-slow" style={{ width: '350px', height: '350px', bottom: '10%', right: '-10%' }} />
+        <div className="glow-orb glow-orb-purple animate-float-slower" style={{ width: '250px', height: '250px', top: '15%', left: '5%' }} />
 
-        <div className="flex flex-row flex-wrap mt-10 h-fit py-14 justify-center border-t border-neutral-800 w-full gap-4">
+        {/* Section Header */}
+        <ScrollReveal animation="fadeDown" className="text-white w-full flex flex-col items-center gap-4 relative-content z-10">
+          <h2 className="section-badge w-fit px-6 h-10 rounded-full text-center flex justify-center items-center text-sm font-medium border border-neutral-700/50 bg-neutral-900/60 backdrop-blur-md">
+            Certifications & Awards
+          </h2>
+          <p className="text-gray-400 text-center max-w-lg mb-4">
+            A testament to my continuous learning journey and commitment to mastering web development technologies.
+          </p>
+        </ScrollReveal>
+
+        {/* Certificates Visual Grid */}
+        <div className="mt-8 pt-12 border-t border-neutral-800/50 w-full relative-content z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
           {certificates.map((certificate, i) => {
-            const { url, title, imageCompany, companyName } =
-              certificate;
+            const { url, title, imageCompany, companyName } = certificate;
             return (
-              <Certificate
+              <ScrollReveal
                 key={i}
-                url={url}
-                title={title}
-                imageCompany={imageCompany}
-                companyName={companyName}
-              />
+                animation="scaleUp"
+                delay={i * 120}
+                duration={600}
+                className="h-full flex"
+              >
+                <Certificate
+                  url={url}
+                  title={title}
+                  imageCompany={imageCompany}
+                  companyName={companyName}
+                />
+              </ScrollReveal>
             );
           })}
         </div>
       </div>
-    </div>
+    </ScrollReveal>
   );
 };
 

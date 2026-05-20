@@ -40,6 +40,21 @@ const SkillsContainer = () => {
     if (contentActive === 'laravel') {
       setSkill(laravel);
     }
+    if (contentActive === 'postgree') {
+      setSkill(postgree);
+    }
+    if (contentActive === 'adonisjs') {
+      setSkill(adonisjs);
+    }
+    if (contentActive === 'redis') {
+      setSkill(redis);
+    }
+    if (contentActive === 'docker') {
+      setSkill(docker);
+    }
+    if (contentActive === 'golang') {
+      setSkill(golang);
+    }
   }, [contentActive]);
   return (
     <div className="flex flex-row mt-10 h-fit py-14 justify-center border-t border-neutral-800 w-full gap-4">
