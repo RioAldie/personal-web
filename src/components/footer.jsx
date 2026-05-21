@@ -8,7 +8,7 @@ const Footer = () => {
         <ScrollReveal animation="fadeUp" duration={500}>
           <hr className="my-6 border-neutral-200 sm:mx-auto dark:border-neutral-700 lg:my-8" />
           <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © 2024 All Rights Reserved.
+            © {new Date().getFullYear()} All Rights Reserved.
           </span>
         </ScrollReveal>
       </div>

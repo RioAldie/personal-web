@@ -2,8 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { projects } from '@/lib/data';
-import Navbar from '@/components/navbar';
-import Footer from '@/components/footer';
 import ScrollReveal from '@/components/animations/scrollReveal';
 import { ArrowLeftIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'; // Need to make sure heroicons is installed, it is used in Navbar (Bars3Icon) and page (ArrowDownIcon)
 
@@ -11,6 +9,36 @@ export function generateStaticParams() {
   return projects.map((project) => ({
     id: project.id,
   }));
+}
+
+export async function generateMetadata({ params }) {
+  const { id } = params;
+  const project = projects.find((p) => p.id === id);
+
+  if (!project) return {};
+
+  return {
+    title: `${project.name} | Project Details`,
+    description: project.about,
+    openGraph: {
+      title: project.name,
+      description: project.about,
+      images: [
+        {
+          url: project.image,
+          width: 800,
+          height: 600,
+          alt: project.name,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: project.name,
+      description: project.about,
+      images: [project.image],
+    },
+  };
 }
 
 export default function ProjectDetail({ params }) {
@@ -23,7 +51,6 @@ export default function ProjectDetail({ params }) {
 
   return (
     <>
-      <Navbar />
       <main className="max-w-screen-xl mx-auto w-full px-4 pt-28 pb-10 flex flex-col min-h-screen relative-content">
         
         {/* Floating Ambient Orbs */}
@@ -47,6 +74,7 @@ export default function ProjectDetail({ params }) {
             fill
             className="object-cover object-top opacity-60 group-hover:scale-105 transition-transform duration-1000 ease-out"
             priority
+            sizes="(max-width: 768px) 100vw, 1200px"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/60 to-transparent z-20" />
           

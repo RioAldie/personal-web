@@ -21,6 +21,7 @@ const Certificate = (props) => {
             width={50}
             height={50}
             className="object-contain drop-shadow-md"
+            sizes="50px"
           />
         </div>
         <span className="px-3 py-1 text-xs font-semibold tracking-wider text-teal-400 bg-teal-400/10 border border-teal-400/20 rounded-full">

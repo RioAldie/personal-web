@@ -71,7 +71,6 @@ export default function ScrollReveal({
       style={{
         ...currentStyle,
         transition: `opacity ${duration}ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms, transform ${duration}ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms`,
-        willChange: 'opacity, transform',
       }}
     >
       {children}

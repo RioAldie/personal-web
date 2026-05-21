@@ -26,7 +26,7 @@ const AutoTextChangeAnimation = ({ texts, color = 'text-yellow-300', intervalTim
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -50 }}
           transition={{ duration: 0.5 }}>
-          <h1>{texts[textIndex]}</h1>
+          <span>{texts[textIndex]}</span>
         </motion.div>
       </AnimatePresence>
     </div>

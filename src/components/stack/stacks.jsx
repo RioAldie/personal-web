@@ -62,6 +62,7 @@ const MarqueeRow = ({ items, direction = 'left', speed = 30 }) => {
                 width={44}
                 height={44}
                 className="group-hover:scale-110 transition-transform duration-300"
+                sizes="44px"
               />
               <div className="absolute inset-0 rounded-full bg-yellow-400/0 group-hover:bg-yellow-400/10 blur-xl transition-all duration-500" />
             </div>
@@ -196,6 +197,7 @@ const Stacks = () => {
                       width={18}
                       height={18}
                       className={`transition-all duration-300 ${activeTab === tab.key ? 'scale-110' : 'opacity-50 grayscale'}`}
+                      sizes="18px"
                     />
                     <span className="hidden md:inline">{tab.label}</span>
                   </button>
@@ -215,6 +217,7 @@ const Stacks = () => {
                     alt={activeTabData?.label || ''}
                     width={24}
                     height={24}
+                    sizes="24px"
                   />
                 </div>
                 <div>

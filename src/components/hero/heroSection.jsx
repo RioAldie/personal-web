@@ -26,9 +26,9 @@ export default function HeroSection() {
         </ScrollReveal>
 
         <ScrollReveal animation="fadeLeft" delay={100} duration={600}>
-          <h2 className="text-4xl text-yellow-300 font-semibold">
+          <h1 className="text-4xl text-yellow-300 font-semibold">
             Hi, Im Rio Aldi Erwanto
-          </h2>
+          </h1>
         </ScrollReveal>
 
         <ScrollReveal animation="fadeLeft" delay={200} duration={600}>
@@ -70,9 +70,11 @@ export default function HeroSection() {
       <ScrollReveal animation="scaleUp" delay={300} duration={800} className="w-2/4 hidden md:flex justify-center items-center relative-content">
         <Image
           src={'/images/rio-fix.png'}
-          alt="rio-profile"
+          alt="Rio Aldi Erwanto - Full Stack Developer"
           width={300}
           height={300}
+          priority
+          sizes="(max-width: 768px) 0px, 300px"
         />
       </ScrollReveal>
     </div>

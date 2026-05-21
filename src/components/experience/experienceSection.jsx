@@ -22,6 +22,7 @@ const ExperienceCard = ({ exp, isEven, isLast }) => {
               width={48}
               height={48}
               className="object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"
+              sizes="48px"
             />
           </div>
         </div>
@@ -46,6 +47,7 @@ const ExperienceCard = ({ exp, isEven, isLast }) => {
                     width={32}
                     height={32}
                     className="object-contain"
+                    sizes="32px"
                   />
                 </div>
                 <div>

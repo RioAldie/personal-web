@@ -16,6 +16,7 @@ const CardProject = (props) => {
           alt={name}
           width={600}
           height={400}
+          sizes="(max-width: 768px) 100vw, 40vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-900/20 to-transparent opacity-80 md:bg-gradient-to-r" />
       </div>
