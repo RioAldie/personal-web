@@ -32,23 +32,24 @@ export default function HeroSection() {
         </ScrollReveal>
 
         <ScrollReveal animation="fadeLeft" delay={200} duration={600}>
-          <div className="text-2xl flex flex-row text-gray-100 font-bold gap-2">
+          <div className="text-xl flex flex-row text-gray-100 font-bold gap-2">
             <TextChangeAnimation intervalTime={5000} texts={['Full Stack Dev', 'Software Dev', 'System Analyst']} color='text-white' justify='start' /> | <TextChangeAnimation justify='center' texts={['Javascript','Golang','ReactJS','NextJS','NodeJS','Typescript',]}/>
           </div>
         </ScrollReveal>
 
         <ScrollReveal animation="fadeUp" delay={300} duration={700}>
           <p className="text-gray-300">
-            I am a fresh graduate of informatics engineering,
-            passionate about web development, particularly in
-            full-stack web development. I have honed my technical
-            skills through online platforms like Dicoding and Skilvul.
-            My expertise includes React, Nextjs, Nodejs, Expressjs,
-            and TypeScript. I am dedicated to documenting my coding
-            projects on GitHub, making it easy for others to see my
-            work. I thrive in a team environment and enjoy
-            collaborative projects that allow me to apply and expand
-            my web development skills.
+         Full-stack developer with hands-on experience building 
+            and maintaining internal 
+            business systems in a manufacturing environment. 
+            Experienced in working across development, 
+            troubleshooting, testing, and system flow discussions to 
+            support operational processes and feature implementation.
+            Passionate about modern web technologies 
+            and AI-assisted development workflows, 
+            with practical experience using React, Next.js, Node.js, Express.js, TypeScript, and PostgreSQL.
+            Comfortable working in collaborative teams and interested in growing further in system analysis,
+            product thinking, and scalable application development.
           </p>
         </ScrollReveal>
 
