@@ -23,6 +23,7 @@ const Navbar = () => {
         <button
           data-collapse-toggle="N-default"
           onClick={() => setActive(!active)}
+          className="block md:hidden"
           type="button"
           aria-controls="navbar-default"
           aria-expanded={active}

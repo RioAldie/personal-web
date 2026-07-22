@@ -146,7 +146,7 @@ const Stacks = () => {
     <ScrollReveal animation="fadeUp" duration={600}>
       <div
         id="skills"
-        className="section-skills gradient-border-top gradient-border-bottom rounded-2xl py-14 px-6 flex flex-col gap-12 justify-between w-full"
+        className="section-skills gradient-border-top gradient-border-bottom py-14 px-6 flex flex-col gap-12 justify-between w-full"
       >
         {/* Ambient orbs */}
         <div className="glow-orb glow-orb-gold animate-float-slower" style={{ width: '350px', height: '350px', top: '20%', right: '-10%' }} />

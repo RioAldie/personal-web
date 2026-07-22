@@ -9,9 +9,11 @@
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
+    overflow-x: hidden;
   }
   body {
     position: relative;
+    overflow-x: hidden;
   }
 
   body::before {
@@ -88,6 +90,15 @@
   }
 }
 
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .animate-float-slow {
   animation: float-slow 12s ease-in-out infinite;
 }
@@ -98,6 +109,10 @@
 
 .animate-pulse-glow {
   animation: pulse-glow 6s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
 }
 
 /* ===== Section Decorators ===== */
@@ -145,7 +160,6 @@
 /* Hero / About section — warm gold ambient */
 .section-hero {
   position: relative;
-  overflow: hidden;
 }
 
 .section-hero::before {
@@ -175,7 +189,6 @@
 /* Skills section — deep blue/purple ambient */
 .section-skills {
   position: relative;
-  overflow: hidden;
   background:
     radial-gradient(ellipse 80% 50% at 50% -10%, rgba(59, 130, 246, 0.05) 0%, transparent 60%),
     linear-gradient(180deg, rgba(10, 10, 10, 1) 0%, rgba(15, 15, 20, 1) 50%, rgba(10, 10, 10, 1) 100%);
@@ -184,7 +197,6 @@
 /* Projects section — subtle warm gradient from left */
 .section-projects {
   position: relative;
-  overflow: hidden;
   background:
     radial-gradient(ellipse 60% 50% at 0% 50%, rgba(234, 179, 8, 0.03) 0%, transparent 60%),
     radial-gradient(ellipse 60% 50% at 100% 50%, rgba(168, 85, 247, 0.03) 0%, transparent 60%),
@@ -194,7 +206,6 @@
 /* Certificates section — teal accent */
 .section-certificates {
   position: relative;
-  overflow: hidden;
   background:
     radial-gradient(ellipse 70% 40% at 50% 100%, rgba(20, 184, 166, 0.04) 0%, transparent 60%),
     linear-gradient(180deg, rgba(10, 10, 10, 1) 0%, rgba(12, 14, 16, 1) 50%, rgba(10, 10, 10, 1) 100%);

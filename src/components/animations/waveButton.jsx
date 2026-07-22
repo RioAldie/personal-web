@@ -7,7 +7,7 @@ const WaveButton = () => {
   return (
     <motion.button
       type="button"
-      className="py-2.5 w-52 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-yellow-500 dark:bg-yellow-400 dark:text-black dark:border-yellow-600 dark:hover:text-black dark:hover:bg-yellow-500 flex items-center justify-center"
+      className="py-3 px-8 w-max text-sm font-bold text-black focus:outline-none bg-yellow-400 rounded-full hover:bg-yellow-500 transition-colors flex items-center justify-center gap-2 shadow-lg shadow-yellow-500/20"
       whileHover={{
         scale: 1.08, // Slightly increase size on hover
         transition: {

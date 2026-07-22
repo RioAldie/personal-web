@@ -9,7 +9,7 @@ const ListProject = () => {
     <ScrollReveal animation="fadeUp" duration={600}>
       <div
         id="projects"
-        className="section-projects gradient-border-top rounded-2xl py-16 px-6 flex flex-col gap-12 justify-between w-full">
+        className="section-projects gradient-border-top py-16 px-6 flex flex-col gap-12 justify-between w-full">
         {/* Ambient orbs */}
         <div className="glow-orb glow-orb-gold animate-float-slow animate-pulse-glow" style={{ width: '280px', height: '280px', top: '30%', left: '-8%' }} />
         <div className="glow-orb glow-orb-purple animate-float-slower" style={{ width: '200px', height: '200px', bottom: '10%', right: '-5%' }} />

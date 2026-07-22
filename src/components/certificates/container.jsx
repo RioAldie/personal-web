@@ -9,7 +9,7 @@ const CertificateContainer = () => {
     <ScrollReveal animation="fadeUp" duration={600}>
       <div
         id="certificates"
-        className="section-certificates gradient-border-top gradient-border-bottom rounded-2xl py-16 px-6 flex flex-col gap-12 justify-between w-full relative overflow-hidden"
+        className="section-certificates gradient-border-top gradient-border-bottom py-16 px-6 flex flex-col gap-12 justify-between w-full relative"
       >
         {/* Ambient orbs */}
         <div className="glow-orb glow-orb-blue animate-float-slow" style={{ width: '350px', height: '350px', bottom: '10%', right: '-10%' }} />
