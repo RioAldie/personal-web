@@ -9,51 +9,14 @@ const content = {
 const SkillsContainer = () => {
   const [contentActive, setContentActive] = useState('javascript');
   const [skill, setSkill] = useState([]);
-  const {
-    javascript,
-    react,
-    mongodb,
-    NextJs,
-    NodeJs,
-    figma,
-    laravel,
-  } = skillset;
   useEffect(() => {
-    if (contentActive === 'javascript') {
-      setSkill(javascript);
-    }
-    if (contentActive === 'mongodb') {
-      setSkill(mongodb);
-    }
-    if (contentActive === 'react') {
-      setSkill(react);
-    }
-    if (contentActive === 'next') {
-      setSkill(NextJs);
-    }
-    if (contentActive === 'node') {
-      setSkill(NodeJs);
-    }
-    if (contentActive === 'figma') {
-      setSkill(figma);
-    }
-    if (contentActive === 'laravel') {
-      setSkill(laravel);
-    }
-    if (contentActive === 'postgree') {
-      setSkill(postgree);
-    }
-    if (contentActive === 'adonisjs') {
-      setSkill(adonisjs);
-    }
-    if (contentActive === 'redis') {
-      setSkill(redis);
-    }
-    if (contentActive === 'docker') {
-      setSkill(docker);
-    }
-    if (contentActive === 'golang') {
-      setSkill(golang);
+    const keyMap = {
+      next: 'NextJs',
+      node: 'NodeJs',
+    };
+    const skillKey = keyMap[contentActive] || contentActive;
+    if (skillset[skillKey]) {
+      setSkill(skillset[skillKey]);
     }
   }, [contentActive]);
   return (

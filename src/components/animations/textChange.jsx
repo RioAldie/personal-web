@@ -14,7 +14,7 @@ const AutoTextChangeAnimation = ({ texts, color = 'text-yellow-300', intervalTim
     }, intervalTime); // Change text every 3 seconds
 
     return () => clearInterval(interval); // Cleanup on unmount
-  }, [texts.length]);
+  }, [texts.length, intervalTime]);
 
   return (
     <div className={`${color} w-[180px] flex justify-${justify}`}>
